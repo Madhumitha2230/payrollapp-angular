@@ -1,0 +1,39 @@
+<p>update-users works!</p>
+<form (ngSubmit)="updateUser()">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" [(ngModel)]="user.name" placeholder="Enter your name" required autofocus>
+    </div>
+    <br>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email"[(ngModel)]="user.email"  placeholder="Enter your email"required>
+    </div>
+    <br>
+    <div>
+        <label for="password">password</label>
+        <input type="password" name="password"[(ngModel)]="user.password" placeholder="Enter your password"required>
+    </div>
+    <br>       
+    <div>
+        <label for="dob">Date Of Birth</label>
+        <input type="date" name="date" [(ngModel)]="user.dob" placeholder="Enter your date of birth"required>
+    </div>
+    <br>
+    <div>
+        <label for="designation">Designation</label>
+        <input type="text" name="designtion" [(ngModel)]="user.designation" placeholder="Enter your Designation" required>
+    </div>
+    <br>
+    <div>
+        <label for="dateOfJoining">Date Of dateOfJoining</label>
+        <input type="text" name="dateOfJoining" [(ngModel)]="user.dateOfJoining" placeholder="Enter date of your joined" required>
+    </div>
+    <br>
+    <div>
+        <label for="date of releiving">Date Of Releiving</label>
+        <input type="text" name="dateOfReleiving" [(ngModel)]="user.dateOfReleiving" placeholder="Enter date of your releiving if not don't fill anything in this coulmn">
+    </div>
+    <br>
+    <div>
+    <button type="submit">submit</button>

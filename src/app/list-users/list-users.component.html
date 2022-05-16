@@ -1,0 +1,24 @@
+<p>list-users works!</p>
+<table class ="table table-border" >
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Employee EmailId</th>
+            <th>Employee Designation</th>
+            <th>Employee date of joined</th>
+            <th>Employess date of releiving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+        <td>{{user.empId}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.designation}}</td>
+        <td>{{user.dateOfJoining}}</td>
+        <td>{{user.dateOfReleiving}}</td>
+        <!-- <td>{{user | json }}</td> -->
+        </tr>
+    </tbody>
+</table>
